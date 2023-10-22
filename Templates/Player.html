@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Player Value Prediction</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">For The Love Of The Game</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict your favorite player's value
+          <br>
+        </h5>
+      </div>
+
+      <div class="row">
+        <form action='/predict' method="post" class="col s12">
+          <div class="row">
+            <div class="input-field col s4">
+              <label for="_name"><b>Potential</b></label>
+              <br>
+              <input id="_name" name="potential" placeholder="Potential" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+
+              <label for="last_name"><b>Value(EUR) </b></label>
+              <br>
+              <input id="last_name" name="value_eur" placeholder="Value(EUR)" type="text" class="validate">
+
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Wage</b></label>
+              <br>
+              <input id="_name" name="wage_eur" placeholder="Wagge(EUR)" type="text" class="validate">
+            </div>
+            <div class="input-field col s4">
+              <label for="_name"><b>Age</b></label>
+              <br>
+              <input id="_name" name="age" placeholder="Age" type="text" class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="_name"><b>League Level</b></label>
+              <br>
+              <input id="_name" name="league_level" placeholder="League Level" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>Release clause(EUR)</b></label>
+              <br>
+              <input placeholder="Release clause(EUR)" name="release_clause_eur" id="first_name" type="text"
+                class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>Shooting</b></label>
+              <br>
+              <input placeholder="Shooting" name="shooting" id="first_name" type="text"
+                class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>Passing</b></label>
+              <br>
+              <input placeholder="Passing" name="passing" id="first_name" type="text"
+                class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>Dribbling</b></label>
+              <br>
+              <input placeholder="Dribbling" name="dribbling" id="first_name" type="text"
+                class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>Defending</b></label>
+              <br>
+              <input placeholder="Defending" name="defending" id="first_name" type="text"
+                class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>Physic</b></label>
+              <br>
+              <input placeholder="Physic" name="physic" id="first_name" type="text"
+                class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="first_name"><b>Attacking Crossing</b></label>
+              <br>
+              <input placeholder="Attacking Crossing" name="attacking_crossing" id="first_name" type="text"
+                class="validate">
+            </div>
+            
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Movement Reactions</b></label>
+              <br>
+              <input id="_name" name="movement_reactions" placeholder="Movement Reactions" type="text" class="validate">
+            </div>   
+            
+            
+            <div class="input-field col s4">
+              <label for="_name"><b>Power Stamina</b></label>
+              <br>
+              <input id="_name" name="power_stamina" placeholder="Power Stamina" type="text" class="validate">
+            </div>
+            
+            <div class="input-field col s4">
+              <label for="_name"><b>Mentality Positioning</b></label>
+              <br>
+              <input id="_name" name="mentality_positioning" placeholder="Mentality Positioning" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Goalkeeping Diving</b></label>
+              <br>
+              <input id="_name" name="goalkeeping_diving" placeholder="Goalkeeping Diving" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Goalkeeping Handling</b></label>
+              <br>
+              <input id="_name" name="goalkeeping_handling" placeholder="Goalkeeping Handling" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Goalkeeping Kicking</b></label>
+              <br>
+              <input id="_name" name="goalkeeping_kicking" placeholder="Goalkeeping Kicking" type="text" class="validate">
+            </div>
+
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Goalkeeping Positioning</b></label>
+              <br>
+              <input id="_name" name="goalkeeping_positioning" placeholder="Goalkeeping Positioning" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>Goalkeeping Reflexes</b></label>
+              <br>
+              <input id="_name" name="goalkeeping_reflexes" placeholder="Goalkeeping Reflexes" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>LS</b></label>
+              <br>
+              <input id="_name" name="ls" placeholder="LS" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>LW</b></label>
+              <br>
+              <input id="_name" name="lw" placeholder="LW" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>LF</b></label>
+              <br>
+              <input id="_name" name="lf" placeholder="LF" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>LAM</b></label>
+              <br>
+              <input id="_name" name="lam" placeholder="LAM" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>lm</b></label>
+              <br>
+              <input id="_name" name="lm" placeholder="lm" type="text" class="validate">
+            </div>
+            <div class="input-field col s4">
+              <label for="_name"><b>lcm</b></label>
+              <br>
+              <input id="_name" name="lcm" placeholder="lcm" type="text" class="validate">
+            </div>
+
+            <div class="input-field col s4">
+              <label for="_name"><b>lwb</b></label>
+              <br>
+              <input id="_name" name="lwb" placeholder="lwb" type="text" class="validate">
+            </div>
+            <div class="input-field col s4">
+              <label for="_name"><b>ldm</b></label>
+              <br>
+              <input id="_name" name="ldm" placeholder="ldm" type="text" class="validate">
+            </div>
+            <div class="input-field col s4">
+              <label for="_name"><b>lb</b></label>
+              <br>
+              <input id="_name" name="lb" placeholder="lb" type="text" class="validate">
+            </div>
+            
+
+            <div class="input-field col s4">
+              <label for="_name"><b>gk</b></label>
+              <br>
+              <input id="_name" name="gk" placeholder="gk" type="text" class="validate">
+            </div>
+
+          </div>
+
+          <div class="row center">
+
+            <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+          </div>
+        </form>
+      </div>
+
+      <br>
+      {{pred}}<br>
+
+    </div>
+  </div>
+
+
+  <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of Ashesi University students working on our mid-semester AI
+            project. The project is bout traing AI models thst predict player's value using the following features:</p>
+
+
+        </div>
+        <div class="col 18 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">cajetan.songwae@ashesi.edu.gh</a></li>
+            <li><a class="white-text" href="#!">clovis.cirubakaderha@shesi.edu.gh</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>
