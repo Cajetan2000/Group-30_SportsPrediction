@@ -295,8 +295,17 @@ Random_Forest_Model_Prediction = Random_Forest_Regressor_Model.predict(Input_Tes
 
 mean_absolute_error(Random_Forest_Model_Prediction, Output_Testing)
 
+
+"""**Calculating the confidence score of the RandomForestRegressor model**"""
+from sklearn.metrics import r2_score
+r2 = r2_score(Output_Testing, Random_Forest_Model_Prediction)
+r2
+
 """**Saving the ensemble RandomForestRegressor model using Pickle**"""
 
 import pickle
 pickle.dump(Random_Forest_Regressor_Model, open("Random_Forest_model.sav", 'wb'))
+
+
+
 
