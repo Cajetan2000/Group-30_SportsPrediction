@@ -48,7 +48,7 @@ def predict():
     # output=10.1
 
     
-    return render_template('Player.html',pred='The player is valued at:\n {}\n This models precition score is 0.9648'.format(y_pred[0]))
+    return render_template('Player.html',pred='The players overall rating is:\n {}\n out of 100 \n This models precition score is 0.982 out of 1.000'.format(y_pred[0]))
     
         
 
